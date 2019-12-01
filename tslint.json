@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "no-invalid-template-strings": false,
+    "no-unused-expression": false,
+    "no-console": true
+  },
+  "linterOptions": {
+    "exclude": []
+  }
+}
