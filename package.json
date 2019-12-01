@@ -1,0 +1,43 @@
+{
+  "name": "anki-scripts",
+  "version": "0.0.1",
+  "description": "scripts for anki / ankidroid card viewer browser",
+  "keywords": [
+    "anki",
+    "javascript",
+    "typescript",
+    "html-builders"
+  ],
+  "author": "Emil Rehnberg <emil.rehnberg@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/emilrehnberg/anki-scripts",
+  "jest": {
+    "globals": {
+      "__TEST__": true
+    },
+    "globalSetup": "./jest.js",
+    "watchman": true,
+    "clearMocks": true,
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "json",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "src/__tests__/.*\\.(test|spec)\\.ts$",
+    "coverageDirectory": "./coverage/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.4",
+    "jest": "24.9.0",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.19.0",
+    "typescript": "3.6.2"
+  }
+}
