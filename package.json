@@ -1,5 +1,12 @@
 {
   "name": "anki-scripts",
+  "scripts": {
+    "lint": "tslint -c tslint.json -p .",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch true --sourceMap",
+    "test": "node --trace-warnings node_modules/.bin/jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "author": "Emil Rehnberg <emil.rehnberg@gmail.com>",
   "version": "0.0.1",
   "description": "scripts for anki / ankidroid card viewer browser",
   "keywords": [
@@ -8,7 +15,6 @@
     "typescript",
     "html-builders"
   ],
-  "author": "Emil Rehnberg <emil.rehnberg@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/emilrehnberg/anki-scripts",
   "jest": {
@@ -28,7 +34,7 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "testRegex": "src/__tests__/.*\\.(test|spec)\\.ts$",
+    "testRegex": "test/.*\\.test\\.ts$",
     "coverageDirectory": "./coverage/"
   },
   "dependencies": {},
@@ -39,5 +45,14 @@
     "ts-jest": "^24.2.0",
     "tslint": "^5.19.0",
     "typescript": "3.6.2"
+  },
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
   }
 }
