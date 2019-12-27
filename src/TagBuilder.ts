@@ -2,8 +2,8 @@ import jaWords from "./data/japaneseWords";
 import jaNames from "./data/japaneseEntities";
 import saWords from "./data/sanskritWords";
 
-export function buildAnchor(content, url) {
-  var anchor = builder("a", content)();
+export function buildAnchor(content: string, url: string) {
+  var anchor: HTMLElement = builder("a", content)();
   anchor.href = url;
   return anchor;
 }
@@ -41,7 +41,7 @@ export function createCaptionTag(content) {
   return builder("caption", content)();
 }
 
-export function builder(tagName, content) {
+export function builder(tagName: string, content?: string) {
   return function() {
     var tag = document.createElement(tagName);
     if (content) {
@@ -118,7 +118,7 @@ export function buildDetailsTag(detailsText, summaryText, lang = "en") {
   var detailsElement = builder("details", detailsText)();
   if (Boolean(summaryText)) {
     var summaryElement = builder("summary", summaryText)();
-    detailsElement.insertAdjacentElement("afterBegin", summaryElement);
+    detailsElement.insertAdjacentElement("afterbegin", summaryElement);
   }
   detailsElement.setAttribute("lang", lang);
   return detailsElement;

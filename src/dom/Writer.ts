@@ -3,7 +3,7 @@ import * as ArrayHelper from "../helper/Array";
 import * as ObjectHelper from "../helper/Object";
 import * as TagBuilder from "../TagBuilder";
 
-export function appendTags(id, tags, position) {
+export function appendTags(id, tags, position?: string) {
   var element = DomReader.readElement(id);
   if (element == undefined) {
     return;
@@ -11,20 +11,20 @@ export function appendTags(id, tags, position) {
   tags.forEach(appendTagToElementBuilder(element, position));
 }
 
-function appendTagToElementBuilder(element, position) {
+function appendTagToElementBuilder(element, position?: string) {
   return function(tag) {
-    var relPosition = position ? position : "beforeEnd";
+    var relPosition = position ? position : "beforeend";
     element.insertAdjacentElement(relPosition, tag);
   };
 }
 
 export function appendToFirstArticle(element) {
   var lastArticle = DomReader.readFirstArticle();
-  lastArticle.insertAdjacentElement("beforeEnd", element);
+  lastArticle.insertAdjacentElement("beforeend", element);
 }
 
 export function appendToBody(element) {
-  DomReader.readBody().insertAdjacentElement("beforeEnd", element);
+  DomReader.readBody().insertAdjacentElement("beforeend", element);
 }
 
 export function writeLetter(contentsMap) {
@@ -86,19 +86,19 @@ function readWords(wordSet) {
   return DomReader.readWords([readerId]);
 }
 
-export function writeTemplates(readerId, writerId) {
-  var templates = DomReader.readWords([readerId]);
-  templates.forEach(writeTemplateTags(writerId));
-}
+// export function writeTemplates(readerId, writerId) {
+//   var templates = DomReader.readWords([readerId]);
+//   templates.forEach(writeTemplateTags(writerId));
+// }
 
-function writeTemplateTags(writerId) {
-  return function(template) {
-    var templatePath = ["_tmpl-", template].join("");
-    require([templatePath], function(tags) {
-      appendTags(writerId, tags);
-    });
-  };
-}
+// function writeTemplateTags(writerId) {
+//   return function(template) {
+//     var templatePath = ["_tmpl-", template].join("");
+//     require([templatePath], function(tags) {
+//       appendTags(writerId, tags);
+//     });
+//   };
+// }
 
 export function insertNameDfnToPlaceHolders(names) {
   names.forEach(findNameClassesAndInsertDfnTags);
@@ -112,7 +112,7 @@ function findNameClassesAndInsertDfnTags(name) {
 function insertNameDfnToPlaceHolder(name) {
   return function(placeHolder) {
     var dfnTag = TagBuilder.buildNameDfnTag(name);
-    placeHolder.insertAdjacentElement("beforeEnd", dfnTag);
+    placeHolder.insertAdjacentElement("beforeend", dfnTag);
   };
 }
 
@@ -128,10 +128,10 @@ function findSanskritClassesAndInsertDfnTags(word) {
 function insertSanskritDfnToPlaceHolder(word) {
   return function(placeHolder) {
     var dfnTag = TagBuilder.buildSanskritDfnTag(word);
-    placeHolder.insertAdjacentElement("beforeEnd", dfnTag);
+    placeHolder.insertAdjacentElement("beforeend", dfnTag);
   };
 }
 
 export function appendTextToElement(id, text) {
-  DomReader.readElement(id).insertAdjacentText("beforeEnd", text);
+  DomReader.readElement(id).insertAdjacentText("beforeend", text);
 }
