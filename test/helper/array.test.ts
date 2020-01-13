@@ -1,4 +1,4 @@
-import * as ArrayHelpers from "../../src/helper/Array";
+import * as ArrayHelpers from "../../src/helper/array";
 
 describe("array helpers", () => {
   it("concatinate elements", async () => {

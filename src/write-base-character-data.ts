@@ -1,8 +1,8 @@
-import * as DataReader from "./data/Reader";
-import * as DomReader from "./dom/Reader";
-import * as DomWriter from "./dom/Writer";
-import * as ArrayHelper from "./helper/Array";
-import * as TagBuilder from "./TagBuilder";
+import * as DataReader from "./data/reader";
+import * as DomReader from "./dom/reader";
+import * as DomWriter from "./dom/writer";
+import * as ArrayHelper from "./helper/array";
+import * as TagBuilder from "./tag-builder";
 
 var jaWriterId = "definitions-writer";
 var namaeWriterId = "namae-writer";

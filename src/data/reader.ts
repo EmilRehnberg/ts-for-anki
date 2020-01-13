@@ -1,7 +1,7 @@
-import * as ArrayHelper from "../helper/Array";
-import jaWords from "./japaneseWords";
-import jaEntities from "./japaneseEntities";
-import saWords from "./sanskritWords";
+import * as ArrayHelper from "../helper/array";
+import jaWords from "./japanese-words";
+import jaEntities from "./japanese-entities";
+import saWords from "./sanskrit-words";
 
 export function readMatcingWords(kanji) {
   return matchEntitiesFromData(jaWords, kanji);

@@ -1,6 +1,6 @@
-import jaWords from "./data/japaneseWords";
-import jaNames from "./data/japaneseEntities";
-import saWords from "./data/sanskritWords";
+import jaWords from "./data/japanese-words";
+import jaNames from "./data/japanese-entities";
+import saWords from "./data/sanskrit-words";
 
 export function buildAnchor(content: string, url: string) {
   var anchor: HTMLElement = builder("a", content)();

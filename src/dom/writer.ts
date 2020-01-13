@@ -1,7 +1,7 @@
-import * as DomReader from "./Reader";
-import * as ArrayHelper from "../helper/Array";
-import * as ObjectHelper from "../helper/Object";
-import * as TagBuilder from "../TagBuilder";
+import * as DomReader from "./reader";
+import * as ArrayHelper from "../helper/array";
+import * as ObjectHelper from "../helper/object";
+import * as TagBuilder from "../tag-builder";
 
 export function appendTags(id, tags, position?: string) {
   var element = DomReader.readElement(id);

@@ -1,4 +1,4 @@
-import * as StringHelpers from "../../src/helper/String";
+import * as StringHelpers from "../../src/helper/string";
 
 describe("string helpers", () => {
   it("dot <int> times", async () => {
