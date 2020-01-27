@@ -86,20 +86,6 @@ function readWords(wordSet) {
   return DomReader.readWords([readerId]);
 }
 
-// export function writeTemplates(readerId, writerId) {
-//   var templates = DomReader.readWords([readerId]);
-//   templates.forEach(writeTemplateTags(writerId));
-// }
-
-// function writeTemplateTags(writerId) {
-//   return function(template) {
-//     var templatePath = ["_tmpl-", template].join("");
-//     require([templatePath], function(tags) {
-//       appendTags(writerId, tags);
-//     });
-//   };
-// }
-
 export function insertNameDfnToPlaceHolders(names) {
   names.forEach(findNameClassesAndInsertDfnTags);
 }
