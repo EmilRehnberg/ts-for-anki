@@ -78,16 +78,6 @@ function buildSimpleContent() {
       writerId: baseWriterId,
       builder: TagBuilder.buildWriterSection
     },
-    jaOldWago: {
-      readerId: "old-wago-reader",
-      writerId: baseWriterId,
-      builder: TagBuilder.buildP
-    },
-    jaOldKango: {
-      readerId: "old-kango-reader",
-      writerId: baseWriterId,
-      builder: TagBuilder.buildP
-    },
     namae: {
       tagId: namaeWriterId,
       writerId: baseWriterId,
@@ -97,11 +87,6 @@ function buildSimpleContent() {
       tagId: chigaiWriterId,
       writerId: baseWriterId,
       builder: TagBuilder.buildWriterSection
-    },
-    chigaiOld: {
-      readerId: "old-chigai-reader",
-      writerId: baseWriterId,
-      builder: TagBuilder.buildDelP
     },
     story: {
       readerId: "story-reader",
