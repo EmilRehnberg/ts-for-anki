@@ -1,3 +1,3 @@
-export * from "./helper/Array";
-export * from "./helper/Object";
-export * from "./helper/String";
+export * from "./helper/array";
+export * from "./helper/object";
+export * from "./helper/string";
