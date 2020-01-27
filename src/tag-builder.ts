@@ -3,8 +3,8 @@ import jaNames from "../data/japanese-entities.json";
 import saWords from "../data/sanskrit-words.json";
 
 export function buildAnchor(content: string, url: string) {
-  var anchor: HTMLElement = builder("a", content)();
-  anchor.href = url;
+  var anchor = builder("a", content)();
+  anchor.setAttribute("href", url);
   return anchor;
 }
 
