@@ -4,7 +4,7 @@
   "strict": true,
   "noUnusedLocals": true,
   "compilerOptions": {
-    "outDir": "lib",
+    "outFile": "lib/anki.js",
     "sourceMap": true,
     "importHelpers": true,
     "allowUnreachableCode": false,
