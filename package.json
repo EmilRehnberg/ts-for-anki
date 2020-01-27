@@ -2,7 +2,7 @@
   "name": "anki-scripts",
   "scripts": {
     "lint": "tslint -c tslint.json -p .",
-    "build": "tsc --target ES5 --lib DOM,ES5,ScriptHost -p tsconfig.json",
+    "build": "tsc --target ES5 --lib DOM,ES5,ScriptHost -p tsconfig.json; cp lib/anki.js $XDG_DATA_HOME/Anki2/e/collection.media/_anki.js",
     "watch": "tsc -p tsconfig.json --watch true --sourceMap",
     "test": "node --trace-warnings node_modules/.bin/jest --runInBand --detectOpenHandles --forceExit"
   },
