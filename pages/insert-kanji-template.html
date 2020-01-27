@@ -1,0 +1,63 @@
+<head>
+<meta charset="UTF-8">
+<link href="./stylesheets/master.css" rel="StyleSheet" type="text/css">
+</head>
+
+<section>
+  <header>
+    <span id="kanji-reader">為</span><span id="kanji-data-writer"></span>
+  </header>
+
+  <article id="base-data-writer"> </article>
+  <article id="bottom">
+    <details id="aux-data-writer">
+      <summary>詳細&mdash;</summary>
+      <dl class="stack with-fields en">
+        <dt>英語</dt>
+        <dd id="eigo-writer"></dd>
+      </dl>
+    </details>
+  </article>
+
+  <p hidden id="wago-reader">為,為す,為る,為る2</p>
+  <p hidden id="wago-number-reader">四</p>
+
+  <p hidden id="kango-reader">行為</p>
+  <p hidden id="kango-number-reader"></p>
+
+  <p hidden id="namae-reader"></p>
+
+  <p hidden id="chigai-reader">画期</p>
+
+  <p hidden id="usage-reader">［常用漢字］［名のり］さだ・しげ・す・すけ・た・ち・なり・ゆき・よし・より</p>
+  <p hidden id="radical-reader">drop ... (steps) ... tail feathers</p>
+  <p hidden id="story-reader">If you see <i>tail feathers</i> and <i>drops</i> of excrement on the <i>steps</i>, I want to <u>do</u> something about it.</p>
+  <p hidden id="audio-reader"></p>
+  <article 
+    data-wago="為,為す,為る,為る2"
+    data-kango="行為" 
+    data-chigai="画期" 
+    data-audio="" 
+    data-pinyin="wèi"
+    data-yue="wai4, wai6"
+    data-go="イ（ヰ）"
+    data-wago-count="四"
+    data-kango-count=""
+    data-rtk-story=""
+    data-rth-story=""
+    data-namae=""
+    data-radical="drop ... (steps) ... tail feathers"
+    data-story="If you see <i>tail feathers</i> and <i>drops</i> of excrement on the <i>steps</i>, I want to <u>do</u> something about it."
+    data-usage="［常用漢字］［名のり］さだ・しげ・す・すけ・た・ち・なり・ゆき・よし・より"
+    id="carddata">
+  </article>
+</section>
+
+<script src="../lib/require.js"></script>
+<script src="../lib/tslib.js"></script>
+<script>
+  require(["../lib/anki"], function() {
+    require(["src/write-base-character-data"]);
+  })
+</script>
+    <!-- require(["src/write-base-kanji-data", "_insert-kanji-reading-hint" ,"append-body-html.js"]); -->

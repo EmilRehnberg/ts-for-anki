@@ -1,0 +1,1026 @@
+@charset "UTF-8";
+.smokey-purple {
+  color: #9351d0; }
+
+.fire-red {
+  color: #ce2029; }
+
+.storm-black-blue {
+  color: #0a44bf; }
+
+.orange-red {
+  color: #ff4500; }
+
+.crimson-red {
+  color: #900; }
+
+.gold-background {
+  background: #ffd700; }
+
+a {
+  color: #1e90ff; }
+
+kbd {
+  color: #ffa500;
+  background-color: #1e90ff; }
+
+summary {
+  color: #b8860b; }
+
+time {
+  color: #f0f; }
+
+nav {
+  text-align: center; }
+
+aside.column,
+header.column,
+section.column {
+  text-align: center; }
+
+del {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #808080; }
+
+i {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: Chartreuse; }
+
+input {
+  text-align: center;
+  font-size: 2em; }
+
+input#typeans {
+  bottom: 0;
+  height: 2em;
+  left: 0;
+  position: fixed; }
+
+sub {
+  font-size: .5em;
+  color: #9932cc; }
+
+u {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #d2691e;
+  color: #dc143c; }
+
+cite {
+  color: #dc143c; }
+  cite:lang(ja) {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal; }
+
+abbr {
+  color: LightGreen; }
+  abbr.cmdline::after {
+    text-transform: none; }
+  abbr::after {
+    content: attr(id);
+    text-transform: uppercase; }
+  abbr:hover::after {
+    color: #606060;
+    content: attr(title);
+    text-transform: capitalize; }
+
+p {
+  margin: 0; }
+  p.long-question {
+    text-align: center; }
+  p.short-question {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff8c00; }
+
+b,
+b.alt,
+b.alt2,
+b.alt3 {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal; }
+
+b {
+  color: #ff0; }
+
+b.alt {
+  color: #ffa500;
+  background-color: #1e90ff; }
+
+b.alt2 {
+  color: #f00;
+  background-color: #ff0; }
+
+b.alt3 {
+  color: #1e90ff;
+  background-color: #0ff; }
+
+q {
+  color: #f0e68c; }
+
+blockquote {
+  border-left: 3px solid #606060;
+  color: #ffa500;
+  margin: .5em 10px;
+  padding: .2em 10px;
+  quotes: "“" "”" "‘" "’"; }
+
+blockquote footer cite {
+  color: #ff8c00; }
+  blockquote footer cite::before {
+    content: '\2009 \2014 \2009'; }
+
+blockquote p {
+  display: inline; }
+  blockquote p::before {
+    color: #f00;
+    content: open-quote; }
+  blockquote p::after {
+    color: #f00;
+    content: close-quote; }
+
+header.column {
+  text-align: center; }
+
+h1 {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em; }
+
+h2 {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em; }
+
+h3 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em; }
+
+h4 {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em; }
+
+h1,
+h2,
+h3,
+h4 {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #d2691e; }
+
+h6 {
+  margin: 0;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #9932cc; }
+  h6::before {
+    color: #606060;
+    content: '文脈：'; }
+
+ul,
+ol {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em; }
+
+ul {
+  list-style-type: cjk-heavenly-stem;
+  padding-left: 1em;
+  text-indent: -.4em; }
+  ul ul {
+    list-style-type: cjk-earthly-branch; }
+
+ol {
+  counter-reset: item;
+  list-style-type: hiragana-iroha; }
+  ol > li {
+    counter-increment: item; }
+  ol ol > li {
+    display: block; }
+  ol ol > li::before {
+    content: counters(item,".") ". ";
+    margin-left: -20px; }
+
+dl {
+  font-size: 1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em; }
+  dl.with-fields dt {
+    font-size: .7em;
+    color: #808080; }
+  dl.back-only {
+    display: none; }
+  dl.dialogue dt {
+    font-size: .6em;
+    display: inline;
+    color: #808080;
+    float: right;
+    text-align: right;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -ms-writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl; }
+  dl.dialogue dfn {
+    color: #808080; }
+  dl.dialogue dd {
+    display: inline;
+    float: none;
+    margin: 0;
+    padding: 0; }
+    dl.dialogue dd::after {
+      content: '\a';
+      white-space: pre; }
+    dl.dialogue dd::before {
+      color: #606060;
+      content: '-'; }
+  dl.stack dt {
+    float: none;
+    display: inline;
+    margin: 0;
+    padding: 0; }
+    dl.stack dt::after {
+      content: '：'; }
+  dl.stack dd {
+    float: none;
+    display: inline;
+    margin: 0;
+    padding: 0; }
+    dl.stack dd::after {
+      content: '\a';
+      white-space: pre; }
+    dl.stack dd dt {
+      color: #ff0; }
+  dl.compact dt {
+    float: none;
+    display: inline;
+    clear: none;
+    margin-left: 1em; }
+    dl.compact dt::after {
+      content: '：'; }
+  dl.compact dd {
+    float: none;
+    display: inline;
+    margin: .2em; }
+    dl.compact dd::after {
+      content: ''; }
+
+div.back dl.back-only {
+  display: block; }
+
+dt {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #008000; }
+
+dd {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap; }
+
+hl {
+  font-size: 1.25em;
+  color: #ff6347; }
+
+dfn {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  color: LawnGreen; }
+  dfn:hover::after {
+    color: #aa0; }
+  dfn::after {
+    color: #f0e68c; }
+  dfn::before {
+    color: #ffa500;
+    content: attr(word); }
+
+figure {
+  margin: 0;
+  float: none; }
+  figure img {
+    display: table; }
+
+figcaption {
+  font-size: .7em;
+  position: static; }
+
+img {
+  background-color: White; }
+
+p.context-images img {
+  height: auto;
+  max-height: 160px;
+  max-width: 160px;
+  width: auto; }
+
+span.reading-no {
+  color: #008000; }
+
+table {
+  font-family: Courier, monospace;
+  border-collapse: collapse; }
+  table.small {
+    font-size: .5em; }
+
+tr.total {
+  border-top: 3px solid #40e0d0; }
+
+th.total,
+td.total {
+  border-left: 3px solid #40e0d0; }
+
+th {
+  color: #f00;
+  background-color: #ff0;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  border: 1px solid #000;
+  padding: .16em 0 0 .3em; }
+
+td {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #ff0;
+  padding: .16em .3em 0; }
+
+.td-tags {
+  text-decoration: none;
+  color: #9932cc;
+  font-size: .5em;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0; }
+  .td-tags::before {
+    content: '文脈'; }
+
+caption {
+  font-weight: bold;
+  color: #0ff; }
+
+.card {
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+  font-family: arial;
+  font-size: 26px; }
+
+.cloze {
+  background-color: #4b0082;
+  color: #ffa500; }
+
+.vim-help em {
+  color: #ffa500;
+  background-color: #1e90ff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal; }
+
+.a {
+  font-size: 1.25em;
+  color: #0f0; }
+
+.q {
+  font-size: 1.5em;
+  color: #ff0; }
+  .q strong {
+    color: #f00; }
+
+abbr#acf:hover:after {
+  content: "auto-correlation function"; }
+
+abbr#aes:hover:after {
+  content: "advanced encryption standard"; }
+
+abbr#aic:hover:after {
+  content: "akaike's information criterion"; }
+
+abbr#alpn:hover:after {
+  content: "application layer protocol negotiation"; }
+
+abbr#anova:hover:after {
+  content: "analysis of variance"; }
+
+abbr#ans:hover:after {
+  content: "atonomic nervous system"; }
+
+abbr#api:hover:after {
+  content: "application programming interface"; }
+
+abbr#arc:hover:after {
+  content: "atomic reference counting"; }
+
+abbr#ast:hover:after {
+  content: "abstract syntax tree"; }
+
+abbr#auc:hover:after {
+  content: "area under the curve"; }
+
+abbr#bc:hover:after {
+  content: "basic calculator"; }
+
+abbr#bic:hover:after {
+  content: "bayes information criterion"; }
+
+abbr#bf:hover:after {
+  content: "bayes factor"; }
+
+abbr#bn:hover:after {
+  content: "bayesian network"; }
+
+abbr#bss:hover:after {
+  content: "best subset selection"; }
+
+abbr#bwt:hover:after {
+  content: "burrows-wheeler transform"; }
+
+abbr#cbn:hover:after {
+  content: "call-by-name"; }
+
+abbr#cbv:hover:after {
+  content: "call-by-value"; }
+
+abbr#cdf:hover:after {
+  content: "cumulative distribution function"; }
+
+abbr#ci:hover:after {
+  content: "confidence interval"; }
+
+abbr#ckc:hover:after {
+  content: "closed kinetic chain"; }
+
+abbr#cns:hover:after {
+  content: "central nervous system"; }
+
+abbr#cqs:hover:after {
+  content: "command query seperation"; }
+
+abbr#cr:hover:after {
+  content: "carriage return"; }
+
+abbr#cv:hover:after {
+  content: "cross validation"; }
+
+abbr#dag:hover:after {
+  content: "directed acyclic graph"; }
+
+abbr#dbn:hover:after {
+  content: "dynamic bayesian network"; }
+
+abbr#db:hover:after {
+  content: "database"; }
+
+abbr#dbms:hover:after {
+  content: "database management system"; }
+
+abbr#dfa:hover:after {
+  content: "deterministic finite automaton"; }
+
+abbr#doms:hover:after {
+  content: "delayed onset muscle soreness"; }
+
+abbr#dpda:hover:after {
+  content: "deterministic pushdown automata"; }
+
+abbr#dsl:hover:after {
+  content: "domain specific language"; }
+
+abbr#eb:hover:after {
+  content: "empirical bayes"; }
+
+abbr#fdr:hover:after {
+  content: "false discovery rate"; }
+
+abbr#gam:hover:after {
+  content: "generalized additive model"; }
+
+abbr#glm:hover:after {
+  content: "generalized linear model"; }
+
+abbr#gnu:hover:after {
+  content: "gnu is not unix"; }
+
+abbr#gpg:hover:after {
+  content: "gnu privacy guard"; }
+
+abbr#gpl:hover:after {
+  content: "general purpose language"; }
+
+abbr#hls:hover:after {
+  content: "hlsearch: highlight search"; }
+
+abbr#html:hover:after {
+  content: "hypertext markup language"; }
+
+abbr#http:hover:after {
+  content: "hypertext transfer protocol"; }
+
+abbr#ietf:hover:after {
+  content: "internet engineering task force"; }
+
+abbr#iqr:hover:after {
+  content: "inter quartile range"; }
+
+abbr#ip:hover:after {
+  content: "internet protocol"; }
+
+abbr#isdn:hover:after {
+  content: "integrated service for digital network"; }
+
+abbr#js:hover:after {
+  content: "javaScript"; }
+
+abbr#kpi:hover:after {
+  content: "key performance indicator"; }
+
+abbr#lda:hover:after {
+  content: "linear discriminant analysis"; }
+
+abbr#lf:hover:after {
+  content: "line feed"; }
+
+abbr#lhs:hover:after {
+  content: "left hand side"; }
+
+abbr#lm:hover:after {
+  content: "linear model"; }
+
+abbr#loocv:hover:after {
+  content: "leave one out cross validation"; }
+
+abbr#ls:hover:after {
+  content: "least squares"; }
+
+abbr#mae:hover:after {
+  content: "Mean absolute error"; }
+
+abbr#mape:hover:after {
+  content: "Mean absolute percentage error"; }
+
+abbr#mase:hover:after {
+  content: "Mean absolute scaled error"; }
+
+abbr#mcmc:hover:after {
+  content: "markov chain monte carlo"; }
+
+abbr#ms:hover:after {
+  content: "mean square"; }
+
+abbr#mse:hover:after {
+  content: "mean squared error"; }
+
+abbr#nfa:hover:after {
+  content: "non-deterministic finite automaton"; }
+
+abbr#npda:hover:after {
+  content: "non-deterministic pushdown automata"; }
+
+abbr#nn:hover:after {
+  content: "nearest neighbor"; }
+
+abbr#nna:hover:after {
+  content: "nearest neighbor averaging"; }
+
+abbr#ns:hover:after {
+  content: "nervous system"; }
+
+abbr#oob:hover:after {
+  content: "out of bag"; }
+
+abbr#orm:hover:after {
+  content: "object relational mapping"; }
+
+abbr#ova:hover:after {
+  content: "one vs all"; }
+
+abbr#ovo:hover:after {
+  content: "one vs one"; }
+
+abbr#okc:hover:after {
+  content: "open kinetic chain"; }
+
+abbr#pb:hover:after {
+  content: "probability distribution"; }
+
+abbr#pca:hover:after {
+  content: "prinicipal component analysis"; }
+
+abbr#pcc:hover:after {
+  content: "pearson's correlation coefficient"; }
+
+abbr#pcr:hover:after {
+  content: "prinicipal component regression"; }
+
+abbr#pda:hover:after {
+  content: "pushdown automata"; }
+
+abbr#pep:hover:after {
+  content: "posterior error probability"; }
+
+abbr#pls:hover:after {
+  content: "partial least squares"; }
+
+abbr#pnf:hover:after {
+  content: "proprioceptive neuromuscular facilitation"; }
+
+abbr#pns:hover:after {
+  content: "peripheral nervous system"; }
+
+abbr#psns:hover:after {
+  content: "parasympathetic nervous system"; }
+
+abbr#rdbms:hover:after {
+  content: "relational database management system"; }
+
+abbr#rc:hover:after {
+  content: "reference counting"; }
+
+abbr#rct:hover:after {
+  content: "randomized controlled trail"; }
+
+abbr#rest:hover:after {
+  content: "representation state transfer"; }
+
+abbr#rf:hover:after {
+  content: "random forest"; }
+
+abbr#rhs:hover:after {
+  content: "right hand side"; }
+
+abbr#rmse:hover:after {
+  content: "Root mean squared error"; }
+
+abbr#roc:hover:after {
+  content: "receiver operating characteristic"; }
+
+abbr#rse:hover:after {
+  content: "residual standard error"; }
+
+abbr#rss:hover:after {
+  content: "residual sum of squares"; }
+
+abbr#rv:hover:after {
+  content: "random variable"; }
+
+abbr#sd:hover:after {
+  content: "standard deviation"; }
+
+abbr#se:hover:after {
+  content: "standard error"; }
+
+abbr#sns:hover:after {
+  content: "sympathetic nervous system"; }
+
+abbr#sql:hover:after {
+  content: "structured query language"; }
+
+abbr#ss:hover:after {
+  content: "sum of squares"; }
+
+abbr#ssl:hover:after {
+  content: "secure sockets layer"; }
+
+abbr#sudo:hover:after {
+  content: "super user do"; }
+
+abbr#svm:hover:after {
+  content: "support vector machine"; }
+
+abbr#tcp:hover:after {
+  content: "transfer control protocol"; }
+
+abbr#tds:hover:after {
+  content: "teX directory structure"; }
+
+abbr#tls:hover:after {
+  content: "transfer layer security"; }
+
+abbr#ts:hover:after {
+  content: "time series"; }
+
+abbr#tss:hover:after {
+  content: "total sum of squares"; }
+
+abbr#udp:hover:after {
+  content: "user datagram protocol"; }
+
+abbr#xargs:hover:after {
+  content: "execute (as) arguments"; }
+
+abbr#xml:hover:after {
+  content: "extensible markup language"; }
+
+.column-flex-table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%; }
+  @media only screen and (min-width: 100px) {
+    .column-flex-table tr {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .column-flex-table td {
+      border: 0 solid;
+      margin: 0 -1px -1px 0;
+      position: relative;
+      width: 100%; } }
+  .column-flex-table * {
+    box-sizing: border-box; }
+  .column-flex-table td::before {
+    color: #696969;
+    content: attr(title);
+    display: block;
+    font-family: "Avenir", "Helvetica", sans-serif;
+    font-size: .45em;
+    font-weight: bold;
+    left: 0;
+    text-transform: uppercase;
+    top: 0; }
+  .column-flex-table.compact td::before {
+    position: absolute; }
+
+span.comment {
+  color: #808080; }
+
+span.error {
+  color: #f00; }
+
+code,
+samp {
+  font-family: Courier, monospace;
+  text-align: left;
+  background-color: #222;
+  color: #fdf5e6; }
+
+code pre,
+samp pre {
+  background-color: #222;
+  font-size: .6em;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap; }
+
+samp {
+  color: #808080; }
+  samp.error {
+    color: #f00; }
+
+pre.code-comment {
+  background-color: #222;
+  font-size: .6em;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  background-color: #000;
+  color: violet; }
+
+pre.small {
+  font-size: 0.52em; }
+
+pre.tiny {
+  font-size: 0.28em; }
+
+var {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: navajowhite; }
+
+var.code {
+  font-family: Courier, monospace;
+  background-color: #222;
+  font-size: .8em; }
+
+:lang(ja) {
+  font-family: 'STKaiti', 'Hanzipen TC', 'Hannotate TC', 'Gujarati MT', 'Xingkai SC'; }
+
+q:lang(ja) {
+  quotes: "「" "」" "『" "』"; }
+  q:lang(ja)::before, q:lang(ja)::after {
+    color: #7fffd4; }
+
+span#onyomi {
+  color: #d2691e; }
+span#kunyomi {
+  color: #1e90ff; }
+span.correct-japanese {
+  font-size: 1.25em;
+  color: #008000;
+  font-family: osaka, minchin; }
+
+dl#onyomi-imports dt {
+  color: #8b0000; }
+dl dt#onyomi,
+dl dt#kunyomi {
+  font-size: 1em;
+  color: #d2691e; }
+dl dd#wrong-reading {
+  color: #606060; }
+
+dd#onpu::after {
+  color: #ffd700;
+  content: "〈" attr(title) "〉"; }
+
+var.character {
+  color: #ffd700; }
+var.entity {
+  color: LightGreen; }
+var.location {
+  color: #87cefa; }
+var.path {
+  color: #0ff; }
+var.person {
+  color: #00fa9a; }
+
+dfn:lang(ja)::before {
+  color: #ffa500;
+  content: attr(word); }
+dfn:lang(ja).full::after {
+  content: attr(title); }
+dfn:lang(ja).character {
+  color: #ff0; }
+  dfn:lang(ja).character::after {
+    color: #aa0; }
+dfn:lang(ja).entity {
+  color: #0b0; }
+  dfn:lang(ja).entity::after {
+    color: #008000; }
+dfn:lang(ja).location {
+  color: #87cefa; }
+  dfn:lang(ja).location::after {
+    color: #59b; }
+dfn:lang(ja).person {
+  color: #0f9; }
+  dfn:lang(ja).person::after {
+    color: #0a5; }
+
+dfn.character:hover::after {
+  content: "〔" attr(reading) "〕" attr(ja) "〈" attr(tag) "〉"; }
+
+dfn.character[reading=""]:hover::after {
+  content: attr(ja) "〈" attr(tag) "〉"; }
+
+dfn.location:hover::after {
+  content: "〔" attr(reading) "〕" attr(ja) "〈" attr(tag) "〉"; }
+
+dfn.location[reading=""]:hover::after {
+  content: attr(ja) "〈" attr(tag) "〉"; }
+
+dfn.person:hover::after {
+  content: "〔" attr(reading) "〕" attr(ja) "〈" attr(tag) "〉"; }
+
+dfn.person[reading=""]:hover::after {
+  content: attr(ja) "〈" attr(tag) "〉"; }
+
+dfn.entity:hover::after {
+  content: "〔" attr(reading) "〕" attr(ja) "〈" attr(tag) "〉"; }
+
+dfn.entity[reading=""]:hover::after {
+  content: attr(ja) "〈" attr(tag) "〉"; }
+
+#namae-writer dfn::after {
+  content: "〔" attr(reading) "〕"; }
+  #namae-writer dfn::after:hover {
+    content: " " attr(ja) "〈" attr(tag) "〉"; }
+
+#hint dfn[ja=""]::after {
+  content: attr(en); }
+#hint dfn::before {
+  content: ''; }
+#hint dfn::after {
+  color: #7cfc00;
+  content: attr(ja); }
+
+#writing-hint dfn::before {
+  content: "〔" attr(reading) "〕"; }
+#writing-hint dfn::after {
+  color: #7cfc00;
+  content: attr(ja); }
+
+#definitions-writer dfn::after {
+  content: "〔" attr(reading) "〕" attr(ja); }
+
+#definitions-writer dfn[reading='']::after {
+  content: " " attr(ja); }
+
+#eigo-writer dfn::after {
+  content: ": " attr(en); }
+
+#chigai-writer dfn::after {
+  color: #008b8b; }
+#chigai-writer dfn::before {
+  color: #596f2f; }
+
+#reading-writer dfn::after, #chigai-writer dfn::after {
+  content: "〔" attr(reading) "〕"; }
+
+:lang(sa) {
+  color: #ffa500;
+  font-family: 'Sanskrit 2003'; }
+  :lang(sa) * {
+    font-size: inherit; }
+  :lang(sa) ol {
+    list-style-type: devanagari; }
+  :lang(sa) .correct-answer {
+    text-decoration: initial; }
+  :lang(sa).example {
+    font-size: 32px; }
+  :lang(sa).main-term {
+    font-size: 48px; }
+
+:lang(en) {
+  font-family: Gentium;
+  font-size: 20px;
+  text-align: center; }
+  :lang(en) * {
+    font-size: inherit; }
+  :lang(en).example {
+    font-size: 24px; }
+  :lang(en).main-term {
+    font-size: 44px; }
+  :lang(en).example, :lang(en).main-term {
+    color: #aaf; }
+
+dfn:lang(sa) {
+  color: #0f9; }
+  dfn:lang(sa)[etymology=""]:hover::after {
+    content: "〔" attr(iast) "〕" attr(definition); }
+  dfn:lang(sa):hover::after {
+    color: #aa0;
+    content: "〔" attr(iast) "〕" attr(definition) " ETYMOLOGY " attr(etymology); }
+  dfn:lang(sa)::before {
+    content: ''; }
+  dfn:lang(sa)::after {
+    color: #0a5; }
+
+.column-flex-table td::before[title="partspeech"] {
+  content: 'Part of Speech'; }
+
+.devanagari dfn:lang(sa)::after {
+  content: attr(word); }
+
+.iast dfn:lang(sa)::after {
+  content: attr(iast); }
+
+.definition dfn:lang(sa)::after {
+  content: attr(definition); }
+
+.devanagari dfn:lang(sa),
+.iast dfn:lang(sa),
+.definition dfn:lang(sa) {
+  color: #000;
+  font-size: .01em; }
+  .devanagari dfn:lang(sa)::after,
+  .iast dfn:lang(sa)::after,
+  .definition dfn:lang(sa)::after {
+    color: #0f9;
+    font-size: 100em; }
+
+span.tone1, .card.night_mode span.tone1 {
+  color: #f00; }
+span.tone2, .card.night_mode span.tone2 {
+  color: #ff8c00; }
+span.tone3, .card.night_mode span.tone3 {
+  color: #0f0; }
+span.tone4, .card.night_mode span.tone4 {
+  color: #55f; }
+span.tone5, .card.night_mode span.tone5 {
+  color: #ccc; }
+
+:lang(zh-Hant) {
+  font-family: 'PMingLiU', 'MingLiU', 'Kai','KaiTi','serif'; }
+
+:lang(zh-Hans) {
+  font-family: 'SimSum-18030', 'SimHei','DFKai-SB','BiauKai','serif'; }
+
+:lang(zh-TW) {
+  font-family: 'PMingLiU', 'MingLiU', 'Kai','KaiTi','serif'; }
+
+:lang(zh) .correct-answer {
+  text-decoration: initial; }
+
+:lang(en) {
+  font-family: 'Roboto', 'Verdana'; }
+  :lang(en) .a {
+    font-size: 1.25em;
+    text-decoration: underline; }
+  :lang(en) .q {
+    font-size: 1.25em; }

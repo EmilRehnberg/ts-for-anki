@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <link href="./stylesheets/master.css" rel="StyleSheet" type="text/css">
+</head>
+
+<p id="kanji-data-writer">窮</p>
+
+<p hidden id="kanji-reader">窮</p>
+<p hidden id="wago-reader"></p>
+<p hidden id="kango-reader">窮地</p>
+<div hidden id="old-wago-reader"></div>
+<div hidden id="old-kango-reader">きゅう</div>
+<p hidden id="wago-number-reader"></p>
+<p hidden id="kango-number-reader">壱</p>
+
+<script src="../lib/require.js"></script>
+<script src="../lib/tslib.js"></script>
+<script>
+  require(["../lib/anki"], function(){require(["src/insert-kanji-reading-hint"]);})
+</script>
+  
