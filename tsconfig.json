@@ -7,6 +7,7 @@
     "outFile": "lib/anki.js",
     "sourceMap": true,
     "importHelpers": true,
+    "removeComments": true,
     "allowUnreachableCode": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
