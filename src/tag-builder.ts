@@ -106,7 +106,7 @@ export function buildWriterSection(id) {
 export function buildReaderP(id) {
   var pTag = builder("p")();
   pTag.id = id;
-  pTag.setAttribute("hidden", true);
+  pTag.setAttribute("hidden", "true");
   return pTag;
 }
 
