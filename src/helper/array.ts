@@ -9,7 +9,7 @@ export function findMatches(array: string[], pattern: string): string[] {
 
 export function insertSeparators(
   elements: string[],
-  sepClosure: () => string
+  sepClosure: () => any
 ): string[] {
   for (var i = elements.length - 1; i--; ) {
     elements.splice(i + 1, 0, sepClosure());
