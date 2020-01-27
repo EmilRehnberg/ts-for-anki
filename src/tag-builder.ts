@@ -8,7 +8,7 @@ export function buildAnchor(content: string, url: string) {
   return anchor;
 }
 
-export function buildSpan(content) {
+export function buildSpan(content: string): HTMLSpanElement {
   return builder("span", content)();
 }
 
