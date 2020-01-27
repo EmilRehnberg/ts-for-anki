@@ -51,7 +51,7 @@
     "typescript": "3.6.2",
     "weak": "^1.0.1"
   },
-  "main": "./lib/index.js",
+  "main": "./lib/anki.js",
   "directories": {
     "lib": "lib",
     "test": "test"
