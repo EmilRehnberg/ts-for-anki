@@ -8,20 +8,22 @@ function readIdsInnerHtml(ids, seperator) {
   return ids.map(readTagContents).join(seperator);
 }
 
-export function readTagContents(id) {
+export function readTagContents(id: string): string {
   var element = id ? readElement(id) : undefined;
   return element ? element.innerHTML : undefined;
 }
 
-export function readClozeSpans() {
+export function readClozeSpans(): HTMLCollectionOf<Element> {
   return readClassNameElements("cloze");
 }
 
-export function readClassNameElements(className) {
+export function readClassNameElements(
+  className: string
+): HTMLCollectionOf<Element> {
   return document.getElementsByClassName(className);
 }
 
-export function readAnchorContent() {
+export function readAnchorContent(): string {
   var anchorList = readTags("a");
   if (anchorList.length != 0) {
     return anchorList[0].text;
@@ -36,21 +38,25 @@ export function readBangHint() {
   }
 }
 
-export function readHintReader() {
+export function readHintReader(): Element {
   var spans = readClassNameElements("hint-reader");
   var hint = readHintsFromSpans(spans)[0];
   return hint;
 }
 
-function readBangHintsFromSpans(spans) {
+function readBangHintsFromSpans(
+  spans: HTMLCollectionOf<Element>
+): HTMLCollectionOf<Element> {
   return [].map.call(spans, readBangHintFromSpan).filter(Boolean);
 }
 
-function readHintsFromSpans(spans) {
+function readHintsFromSpans(
+  spans: HTMLCollectionOf<Element>
+): HTMLCollectionOf<Element> {
   return [].map.call(spans, readHintFromSingleSpan).filter(Boolean);
 }
 
-function readBangHintFromSpan(span) {
+function readBangHintFromSpan(span: Element) {
   var content = span.innerHTML;
   if (content == undefined) {
     return;
@@ -60,34 +66,34 @@ function readBangHintFromSpan(span) {
   }
 }
 
-function readHintFromSingleSpan(span) {
+function readHintFromSingleSpan(span: HTMLElement): string {
   return span.innerHTML;
 }
 
-function hasClozedBangHint(content) {
+function hasClozedBangHint(content): Boolean {
   return content[1] == "!";
 }
 
-function readClozedBangHint(content) {
+function readClozedBangHint(content: string): string {
   return content.slice(2, -1);
 }
 
-export function readFirstArticle() {
+export function readFirstArticle(): Element {
   return readTags("article")[0];
 }
 
-export function readMain() {
+export function readMain(): Element {
   return readTags("main")[0];
 }
 
-function readTags(name) {
+function readTags(name: string): HTMLCollectionOf<any> {
   return document.getElementsByTagName(name);
 }
 
-export function readElement(id) {
+export function readElement(id: string): HTMLElement {
   return document.getElementById(id);
 }
 
-export function readBody() {
+export function readBody(): HTMLElement {
   return document.body;
 }
